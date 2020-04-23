@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.load{
+			width: 200px;
+			height: 200px;
+			background: #F57224;
+			margin-left: 400px;
+			margin-top: 200px;
+			display: flex;
+			animation: a 2s infinite ease-in-out;
+		}
+		@keyframes a{
+			0%{
+				transform: perspective(600px) rotateX(0deg) rotateY(0deg);
+			}
+			50%{
+				transform: perspective(600px) rotateX(-180deg) rotateY(0deg);
+			}
+			100%{
+				transform: perspective(600px) rotateX(-180deg) rotateY(-180deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="load"></div>
+</body>
+</html>

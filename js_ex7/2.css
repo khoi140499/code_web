@@ -1,0 +1,9 @@
+.card{
+	transition: 0.5s;
+}
+.luotdi{
+	transform: translateX(400px);
+}
+.luotve{
+	transform: translateX(-400px);
+}

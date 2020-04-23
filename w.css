@@ -1,0 +1,24 @@
+.vd{
+	position: relative;
+}
+.a{
+	position: absolute;
+	height: 100px;
+	width: 300px;
+	background: blue;
+}
+.b{
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	background: red;
+	animation: aa 3s forwards;
+}
+@-webkit-keyframes aa{
+	from{
+		transform: translateX(0px);
+	}
+	to{
+		transform: translateX(300px);
+	}
+}

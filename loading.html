@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		body{
+			margin: 0;
+  			padding: 0;
+  			background: #34495e;
+  			height: 100vh;
+  			display: flex;
+		}
+		.loading{
+			position: relative;
+			width: 200px;
+			height: 200px;
+			box-sizing: border-box;
+			border-radius: 50%;
+			border-top: 10px solid #EC912D;
+			animation: a 2s linear infinite; 
+			left: 200px;
+			top: 200px;
+		}
+		.loading:after{
+			content: "";
+			width: 200px;
+			height: 200px;
+			box-sizing: border-box;
+			border-radius: 50%;
+			border-top: 10px solid #136ED2;
+			position: absolute;
+			transform: rotate(240deg);
+			top: -10px;
+		}
+		.loading:before{
+			content: "";
+			width: 200px;
+			height: 200px;
+			box-sizing: border-box;
+			border-radius: 50%;
+			border-top: 10px solid #EE0000;
+			position: absolute;
+			transform: rotate(120deg);
+			top: -10px;
+		}
+		@keyframes a{
+			to{
+				transform: rotate(360deg);
+			}
+		}
+		span{
+			position: absolute;
+			color: white;
+			font-size: 20px;
+			top: 285px;
+			left:260px;
+		}
+  	</style>
+</head>
+<body>
+	<div class="loading"></div>
+	<span>Loading...</span>
+</body>
+</html>

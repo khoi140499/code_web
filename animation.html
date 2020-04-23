@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.vd{
+			width: 500px;
+			height: 600px;
+			background: red;
+			transform: perspective(800px) rotateY(0deg);
+			transform-origin: 100% 40%;
+			}
+		.hd{
+			transition: 0.4s;
+			transform: scale(0.8) perspective(800px) rotateY(-20deg);
+			transform-origin: 100% 40%;
+			
+		}
+		/*@keyframes chay{
+			from{
+				
+				margin-left: -30px;
+			}
+			to{
+				transform: scale(1) perspective(800px) rotateY(0deg);
+				transform-origin: 100% 40%;
+				margin-left: 0px;
+			}
+		}*/
+	</style>
+</head>
+<body>
+	<div class="vd">
+		<button id="as">ad</button>
+	</div>
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function(){
+			var nut = document.getElementById('as');
+			var n = document.querySelector('.vd');
+			nut.onclick = function(){
+				n.classList.toggle('hd');
+			}
+		}, false)
+	</script>
+</body>
+</html>

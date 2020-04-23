@@ -1,0 +1,39 @@
+*{margin: 0; padding: 0;} 
+.banner{
+	height: 100px;
+	background: url(capture.png) no-repeat center;
+	background-size: cover;
+}
+.menu{
+	height: 40px;
+	line-height: 40px;
+	background: #ad1c22;
+	transition: 0.4s;
+}
+.menu a{
+	color: white;
+	padding: 0 27px;
+	text-transform: uppercase;
+}
+.tren{
+	background: #9F3BFF;
+	height: 350px;
+	width: 500px;
+}
+.chungtoi{
+	background: #E6ABFF;
+	height: 350px;
+	width: 500px;
+}
+.duoi{
+	background: #82C2FF;
+	height: 350px;
+	width: 500px;
+}
+.menu.menuden{
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	top: 0px;
+	background: #1d1d1d;
+}

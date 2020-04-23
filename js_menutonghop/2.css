@@ -1,0 +1,423 @@
+*{margin: 0;padding: 0}
+html, body{
+	height: 100%;
+	overflow-x: hidden; /*Khong co thanh cuon ngang*/
+	overflow-y: hidden;
+}
+.main{
+	position: relative;
+	height: 100%;
+	background: #444444;
+}
+.menutrai{
+	position: absolute;
+	height: 100%;
+	background: #48A770;
+	width: 300PX;
+	/*opacity: 0;*/
+	z-index: 2;
+}
+/*h3.display-3.text-xs-center{
+	font-size: 35px;
+	padding: 20px;
+	color: #275B3D; 
+	text-align: center;
+}
+li.list-group-item{
+	background: none;
+	color: white;
+	text-transform: uppercase;
+}
+ul li:hover{
+	background: #3A865A;
+	color: white;
+	cursor: pointer;
+}*/
+.noidung{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #F3EFE0;
+/*	margin-left: 300px;*/
+}
+/*.task{
+	width: 100%;
+	height: 20px;
+	background: #F7F4E9;
+	position: absolute;
+}
+.nut{
+	float: right;
+	width: auto;
+	background: #388A5A;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.nut:hover{
+	background: #2C774B;
+}
+.baonut{
+	width: 410px;
+}
+.task_left{
+	width: 140px;
+	height: 20px;
+	float: left;
+	font-size: 12px;
+	padding-left: 15px;
+	color: #48A770;
+	cursor: pointer;
+}
+.task_left:hover{
+	background: #FAF8F2;
+	color: #5D5D5B;
+}
+.task_right{
+	width: 235px;
+	height: 20px;
+	float: right;
+	font-size: 12px;
+	cursor: pointer;
+	padding-left: 15px;
+	color: #48A770;
+}
+.task_right:hover{
+	background: #FAF8F2;
+	color: #5D5D5B;
+}
+.text{
+	padding-top: 60px;
+}
+.display-4.text-center{
+	color: #48A770;
+	font-size: 47px;
+}
+p.text-center{
+	color: #B7B3A4;
+	font-size: 27px;
+}
+.ndchinh{
+	width: 900px;
+	height: 340px;
+	margin: auto;
+	margin-top: 100px;
+}
+.ndnut{
+	float: left;
+	width: 449px;
+	height: 310px;
+	border-right: 1px solid #DAD7C9;
+}
+.ndtext{
+	float: left;
+	width: 450px;
+	height: 340px;
+}
+.ndtext .display-4{
+	color: #48A770;
+	font-size: 35px;
+	margin-left: 30px;
+}
+.den1{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+.den2{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+.den3{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+.den4{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+.den5{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+.den6{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+.den7{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+.den8{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+.den9{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+.den0{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+.den11{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+.den12{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+.den13{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+.den14{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+.len1{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.len2{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.len3{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.len4{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.len5{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.len6{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.len7{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.len8{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.len0{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.len9{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.len0{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.len11{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.len12{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.len13{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.len14{
+	opacity: 0.4;
+	visibility: visible;
+	transition: 0.4s;
+}
+.slideontop_hien{
+	transition: 0.4s;
+	animation: chieu0 0.5s forwards;
+	opacity: 1;
+}
+.slideontop_mat{
+	transition: 0.4s;
+	animation: chieu01 0.5s forwards;
+	opacity: 1;
+}
+@-webkit-keyframes chieu0{
+	from{
+		transform: translateX(-300px);
+	}
+	to{
+		transform: translateX(0px);
+	}
+}
+@-webkit-keyframes chieu01{
+	from{
+		transform: translateX(0px);
+	}
+	to{
+		transform: translateX(-300px);
+	}
+}
+.reveal_hien{
+	animation: chieu1 0.5s forwards;
+	opacity: 1;
+}
+.reveal_mat{
+	animation: chieu11 0.5s forwards;
+	opacity: 1;
+}
+.reveal_menu{
+	opacity: 1;
+	visibility: visible;
+}
+@-webkit-keyframes chieu1{
+	from{
+		transform: translateX(0px);
+	}
+	to{
+		transform: translateX(300px);
+	}
+}
+@-webkit-keyframes chieu11{
+	from{
+		transform: translateX(300px);
+	}
+	to{
+		transform: translateX(0px);
+	}
+}
+/*.noidungto{
+	height: 100%;
+	transition: cubic-bezier(.94,.06,.3,.92) 0.4s;
+	padding-top: 15%;
+}
+*/*/

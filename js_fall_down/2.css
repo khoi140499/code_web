@@ -1,0 +1,107 @@
+*{margin: 0; padding: 0}
+html,body{
+	height: 100%;
+	overflow-x: hidden; /*khong co thanh cuon ngang*/
+}
+.main{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: #767676;
+}
+.noidungto{
+	height: 100%;
+	background: white;
+	width: 100%;
+	position: absolute;
+}
+.menutrai{
+	height: 100%;
+	background: #48A770;
+	width: 300PX;
+	position: absolute;
+}
+.nut{
+	margin-left: 400px;
+	margin-top: 300px;
+	position: absolute;
+}
+.den{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.42);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	transition: 0.4s;
+	opacity: 0;
+	visibility: hidden;
+}
+.hienden{
+	transition: 0.4s;
+	opacity: 1;
+	visibility: visible;
+}
+.chuyendong{
+	animation: chieu1 0.5s forwards;
+}
+.chuyenve{
+	animation: chieu2 0.5s forwards;
+}
+.menu1{
+	animation: luotdi 0.5s forwards;
+}
+.menu2{
+	animation: luotve 0.8s forwards;
+}
+@-webkit-keyframes chieu1{
+	from{
+		transform: translateX(0px);
+	}
+	to{
+		transform: translateX(300px);
+	}
+}
+@-webkit-keyframes chieu2{
+	from{
+		transform: translateX(300px);
+	}
+	to{
+		transform: translateX(0px);
+	}
+}
+@-webkit-keyframes luotdi{
+	from{
+		transform: translateY(-1000px);
+	}
+	to{
+		transform: translateY(0px);
+	}
+}
+@-webkit-keyframes luotve{
+	from{
+		transform: translateY(0px);
+	}
+	to{
+		transform: translateY(-1000px);
+	}
+}
+li.list-group-item{
+	background: none;
+	color: white;
+	text-transform: uppercase;
+}
+ul li:hover{
+	background: white;
+	color: #48A770;
+	cursor: pointer;
+}
+h3.display-3.text-xs-center{
+	font-size: 35px;
+	padding: 20px;
+	color: white; 
+	text-align: center;
+}
+
