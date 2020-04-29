@@ -1,0 +1,150 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	width: 100%;
+	height: 100%;
+}
+.pay{
+	float: left;
+	width: 100%;
+	height: 740px;
+	background: #FBF8F1;
+	padding-top: 40px;
+}
+/*thong tin nguoi mua*/
+.form_text{
+	float: left;
+	height: 90px;
+	font-size: 2.2vw;
+	padding-top: 21px;
+}
+.form_dangnhap{
+	float: right;
+	height: 90px;
+	font-size: 1vw;
+	font-family: 'Raleway', Arial, sans-serif;
+	padding-top: 40px;
+	padding-right: 22px;
+}
+.form_dangnhap a{
+	text-decoration: none;
+	color: #222222;
+}
+.form_dangnhap a:hover{
+	color: #B88C72;
+}
+.thongtinthanhtoan{
+	height: 650px;
+	padding-left: 33px;
+	border-right: 1px solid #8D7C62;
+}
+.thongtinthanhtoan input{
+	width: 500px;
+	height: 45px;
+	border-radius: 8px;
+	border: 1px solid #B88C72;
+}
+.thongtinthanhtoan input[type=submit]{
+	width: 130px;
+	height: 45px;
+	border-radius: 4px;
+	background: #B67153;
+	color: #FBF8F1;
+	font-size: 1vw;
+	float: right;
+	margin-right: 22px;
+	margin-top: 10px;
+}
+.thongtinthanhtoan input[type=submit]:hover{
+	background: linear-gradient(-120deg, #E416FC, #0FCEE0);
+}
+.thongtinthanhtoan input[type=checkbox]{
+	width: 12px;
+	height: 12px;
+	border-radius: 10px;
+}
+.cod{
+	margin-left: 80px;
+}
+.inputchontinh{
+	width: 500px;
+	height: 45px;
+	border-radius: 8px;
+	border: 1px solid #B88C72;
+}
+.inputchonhuyen{
+	width: 500px;
+	height: 45px;
+	border-radius: 8px;
+	border: 1px solid #B88C72;
+}
+.thongtinthanhtoan textarea{
+	width: 500px;
+	border-radius: 8px;
+	border: 1px solid #B88C72;
+}
+/*thong tin gio hang*/
+.giohangthanhtoan{
+	height: 650px;
+}
+.giohangthanhtoan li{
+	background: #FBF8F1;
+	border-right: 0px;
+	border-left: 0px;
+}
+.giohangthanhtoan input{
+	width: 320px;
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #B88C72;
+}
+.li_tittledonhang{
+	font-size: 1.6vw;
+	height: 93px;
+	padding-top: 33px;
+	border-top: 0px;
+}
+.li_ttdonhang{
+	height: 130px;
+}
+.img_sanpham{
+	float: left;
+	width: 80px;
+}
+.img_sanpham img{
+	width: 80px;
+}
+.popple{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: #B67153;
+	color: #FBF8F1;
+	text-align: center;
+	border-radius: 50%;
+	margin-left: 70px;
+}
+.tt_sanpham{
+	float: left;
+	width: 200px;
+	margin-left: 30px;
+	margin-top: 20px;
+	font-size: 1.1vw;
+}
+.gia_sanpham{
+	float: right;
+	margin-left: 30px;
+	margin-top: 20px;
+	font-size: 1.1vw;
+}
+.t_cost{
+	height: 40px;
+}
+.cost_txt{
+	float: left;
+}
+.cost{
+	float: right;
+}

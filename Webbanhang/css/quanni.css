@@ -1,0 +1,24 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+.quanni{
+	float: left;
+	width: 100%;
+	height: 600px;
+	background: #FBF8F1;
+	padding-top: 50px;
+	font-family: 'Courier New';
+}
+.ptu_trai1{
+	float: left;
+	width: 240px;
+	height: 600px;
+}
+.ptu_phai1{
+	float: left;
+	width: 900px;
+	height: 600px;
+	background: #FBF8F1;
+	padding-left: 10px;
+}

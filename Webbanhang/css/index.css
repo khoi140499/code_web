@@ -1,0 +1,531 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	width: 100%;
+	height: 100%;
+}
+/*menu*/
+.menu_slide{
+	float: left;
+	width: 100%;
+	height: 400px;
+	background: #FBF8F1;
+	border-bottom: 1px solid #9C9A97;
+}
+.menu{
+	float: left;
+	width: 220px;
+	height: 400px;
+	background: white;
+	position: relative;
+	z-index: 0;
+	border-bottom: 1px solid #9C9A97;
+	z-index: 2;
+
+}
+.menu a{
+	text-decoration: none;
+	color: #222222;
+}
+.menu li{
+	width: 220px;
+	border: 0px;
+}
+.menu li:hover{
+	background: #EAEAEA;
+}
+.menu li span:hover{
+	color: #F94D4D;
+	cursor: pointer;
+}
+.menu a:hover{
+	color: #F94D4D;
+}
+/*thời trang nam*/
+.men{
+	display: none;
+	position: absolute;
+	margin-left: 205px;
+	width: 200px;
+	height: 400px;
+	background: white;
+	margin-top: -69px;
+	border-bottom: 1px solid #EFF0F5;
+	z-index: 2;
+	box-shadow: 0 0 9px 3px #00000096;
+}
+.men-all:hover .men{
+	display: block;
+	animation: a2 0.6s forwards;
+}
+@keyframes a2{
+	0%{
+		transform: translateX(-50px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+.men li{
+	border: 0px;
+	width: 200px;
+}
+.men_somi:hover .men_aos{
+	display: block;
+	animation: a3 0.6s forwards;
+}
+@keyframes a3{
+	0%{
+		transform: scale(0.94);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.men_aos{
+	display: none;
+	position: absolute;
+	width: 200px;
+	height: 400px;
+	background: white;
+	margin-top: -30px;
+	margin-left: 185px;
+	border-bottom: 1px solid #EFF0F5;
+	box-shadow: 0 0 9px 3px #00000096;
+	z-index: 2;
+}
+.men_thun:hover .men_aot{
+	display: block;
+	animation: a3 0.6s forwards;
+}
+.men_aot{
+	display: none;
+	position: absolute;
+	width: 200px;
+	height: 400px;
+	background: white;
+	margin-top: -69px;
+	margin-left: 185px;
+	box-shadow: 0 0 9px 3px #00000096;
+	z-index: 2;
+}
+.men_quan:hover .men_q{
+	display: block;
+	animation: a3 0.6s forwards;
+}
+.men_q{
+	display: none;
+	position: absolute;
+	width: 200px;
+	height: 400px;
+	background: white;
+	margin-top: -108px;
+	margin-left: 185px;
+	border-bottom: 1px solid #EFF0F5;
+	box-shadow: 0 0 9px 3px #00000096;
+	z-index: 2;
+}
+/*thời trang nữ*/
+.female{
+	display: none;
+	position: absolute;
+	margin-left: 205px;
+	width: 200px;
+	height: 400px;
+	background: white;
+	margin-top: -108px;
+	border-bottom: 1px solid #EFF0F5;
+	z-index: 1;
+	box-shadow: 0 0 9px 3px #00000096;
+}
+.female_all:hover .female{
+	display: block;
+	animation: a2 0.6s forwards;
+}
+.female li{
+	border: 0px;
+	width: 200px;
+}
+.female_somi:hover .female_aos{
+	display: block;
+	animation: a3 0.6s forwards;
+}
+.female_aos{
+	display: none;
+	position: absolute;
+	width: 200px;
+	height: 400px;
+	background: white;
+	margin-top: -30px;
+	margin-left: 185px;
+	border-bottom: 1px solid #EFF0F5;
+	box-shadow: 0 0 9px 3px #00000096;
+	z-index: 2;
+}
+.female_thun:hover .female_aot{
+	display: block;
+	animation: a3 0.6s forwards;
+}
+.female_aot{
+	display: none;
+	position: absolute;
+	width: 200px;
+	height: 400px;
+	background: white;
+	margin-top: -69px;
+	margin-left: 185px;
+	border-bottom: 1px solid #EFF0F5;
+	box-shadow: 0 0 9px 3px #00000096;
+	z-index: 2;
+}
+.female_quan:hover .female_q{
+	display: block;
+	animation: a3 0.6s forwards;
+}
+.female_q{
+	display: none;
+	position: absolute;
+	width: 200px;
+	height: 400px;
+	background: white;
+	margin-top: -108px;
+	margin-left: 185px;
+	border-bottom: 1px solid #EFF0F5;
+	box-shadow: 0 0 9px 3px #00000096;
+	z-index: 2;
+}
+/*thời trang mùa đông*/
+.f_w{
+	display: none;
+	position: absolute;
+	margin-left: 205px;
+	width: 200px;
+	height: 400px;
+	background: white;
+	margin-top: -147px;
+	border-bottom: 1px solid #EFF0F5;
+	z-index: 1;
+	box-shadow: 0 0 9px 3px #00000096;
+}
+.fashion_winter:hover .f_w{
+	display: block;
+	animation: a2 0.6s forwards;
+}
+.f_w li{
+	border: 0px;
+	width: 200px;
+}
+/*phụ kiện nam*/
+.phukiennam{
+	display: none;
+	position: absolute;
+	margin-left: 205px;
+	width: 200px;
+	height: 400px;
+	background: white;
+	margin-top: -186px;
+	border-bottom: 1px solid #EFF0F5;
+	z-index: 1;
+	box-shadow: 0 0 9px 3px #00000096;
+}
+.phukiennam_all:hover .phukiennam{
+	display: block;
+	animation: a2 0.6s forwards;
+}
+.phukiennam li{
+	border: 0px;
+	width: 200px;
+}
+/*phụ kiện nữ*/
+.phukiennu{
+	display: none;
+	position: absolute;
+	margin-left: 205px;
+	width: 200px;
+	height: 400px;
+	background: white;
+	margin-top: -225px;
+	border-bottom: 1px solid #EFF0F5;
+	z-index: 1;
+	box-shadow: 0 0 9px 3px #00000096;
+}
+.phukiennu_all:hover .phukiennu{
+	display: block;
+	animation: a2 0.6s forwards;
+}
+.phukiennu li{
+	border: 0px;
+	width: 200px;
+}
+/*slide*/
+.slide{
+	float: left;
+	width: 920px;
+	height: 400px;
+	z-index: 1;
+}
+.slide img{
+	max-width: 100%;
+}
+/*banner*/
+.banner{
+	float: left;
+	padding-top: 15px;
+	width: 100%;
+	height: 130px;
+	background: #FBF8F1;
+}
+/*deal*/
+.deal{
+	float: left;
+	width: 100%;
+	height: 450px;
+	background: #FBF8F1;
+	padding-top: 30px;
+}
+.logo_deal{
+	position: absolute;
+	margin-top: -40px;
+	margin-left: -10px;
+}
+.logo_deal img{
+	width: 180px;
+}
+.deal_page1{
+	width: 100%;
+	height: 400px;
+	padding-left: 15px;
+	background: white;
+	padding-top: 40px;
+	border: 1px solid red;
+}
+.page1_sp{
+	float: left;
+	width: 260px;
+	height: 330px;
+	margin-right: 20px;
+}
+.sp_img{
+	width: 260px;
+	height: 260px;
+	z-index: 3;
+	position: absolute;
+	box-shadow: 0 0 9px 3px #00000096;
+}
+.page1_sp:hover .muahang{
+	transition: 0.6s;
+	transform: translateY(40px);
+}
+.muahang{
+	position: absolute;
+	width: 220px;
+	height: 40px;
+	background: #EADECE;
+	box-shadow: 0 0 9px 3px #00000096;
+	z-index: 1;
+	margin-top: -100px;
+	margin-left: 20px;
+	transition: 0.6s;
+	padding-top: 4px;
+	text-align: center;
+}
+.muahang a{
+	text-decoration: none;
+	color: #022D33;
+}
+.sp_tt{
+	width: 220px;
+	height: 320px;
+	margin-left: 20px;
+	z-index: 0;
+	padding-top: 268px;
+	padding-left: 13px;
+	box-shadow: 0 0 9px 3px #00000096;
+}
+.sp_tt span{
+	font-size: 0.95vw;
+}
+.sp_tt b{
+	margin-left: 8px;
+	color: red;
+}
+.xemtatca{
+	position: absolute;
+	margin-top: -60px;
+	margin-left: 1024px;
+}
+.btn-light{
+	background: white;
+	border: 1px solid red;
+	width: 100px;
+	color: red;
+}
+/*thời trang nam*/
+.tt_men{
+	float: left;
+	width: 100%;
+	height: 530px;
+	background: #FBF8F1;
+	padding-top: 20px;
+}
+.tt_header{
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid #794A35;
+}
+.tt_tittle{
+	float: left;
+	width: 270px;
+	height: 70px;
+	background: #794A35;
+}
+.tittle{
+	float: left;
+	text-align: center;
+	width: 270px;
+	height: 70px;
+	padding-top: 17px;
+	padding-left: 15px;
+	color: white;
+	font-size: 1.6vw;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+/*Tạo hình tam giác*/
+.tg{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-left: 70px solid #794A35;
+	margin-left: 270px;
+}
+/*---*/
+.danhmuc{
+	float: left;
+	width: 870px;
+	height: 69px;
+	padding-top: 15px;
+	padding-left: 60px;
+}
+.danhmuc a{
+	text-decoration: none;
+	color: #794A35;
+}
+.danhmuc a:hover{
+	color: #FD8D04;
+}
+.beg{
+	float: left;
+	background: #FBF8F1;
+	border: 0px;
+	margin-right: 40px;
+}
+.end{
+	float: right;
+	border: 1px solid #794A35;
+}
+.men_center{
+	float: left;
+	width: 100%;
+	height: 430px;
+	/*background: white;*/
+	padding-top: 30px;
+	border-bottom: 1px solid #794A35;
+}
+.men_sp{
+	float: left;
+}
+/*card*/
+.s1{
+	float: left;
+	width: 220px;
+	height: 390px;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin-right: 10px;
+}
+.s1:hover .icon_cart{
+	transform: translateY(-41px);
+}
+.s2{
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.ct{
+	font-size: 1vw;
+}
+.icon_cart{
+	width: 210px;
+	text-align: center;
+	font-size: 1.2vw;
+	transition: 0.3s;
+	margin-top: 40px;
+}
+.button_muahang{
+	width: 140px;
+	text-align: center;
+	background: #794A35;
+	border: 1px solid #794A35;
+	border: 0px; 
+	color: #FBF8F1;
+}
+.button_muahang:hover{
+	border: 1px solid #794A35;
+	background: #FBF8F1;
+	color: #794A35;
+}
+.icon_cart a{
+	text-decoration: none;
+	color: #794A35;
+	margin-right: 8px;
+}
+.icon_cart a:hover{
+	color: #564EFF;
+}
+.s3{
+	float: left;
+	width: 220px;
+	height: 390px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.s3:hover .icon_cart{
+	transform: translateY(-41px);
+}
+/*---*/
+/*----*/
+/*thời trang nữ*/
+.tt_famale{
+	float: left;
+	width: 100%;
+	height: 530px;
+	background: #FBF8F1;
+	padding-top: 20px;
+}
+/*thời trang đông*/
+.tt_md{
+	float: left;
+	width: 100%;
+	height: 530px;
+	background: #FBF8F1;
+	padding-top: 30px;
+}
+/*phụ kiện nam*/
+.tt_pknam{
+	float: left;
+	width: 100%;
+	height: 530px;
+	background: #FBF8F1;
+	padding-top: 30px;
+}
+/*phụ kiện nữ*/
+.tt_pknu{
+	float: left;
+	width: 100%;
+	height: 580px;
+	background: #FBF8F1;
+	padding-top: 30px;
+}

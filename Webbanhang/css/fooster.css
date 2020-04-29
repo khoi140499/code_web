@@ -1,0 +1,228 @@
+.fooster{
+	float: left;
+	width: 100%;
+	height: 470px;
+	background-attachment: fixed;
+	position: relative;
+	/*background: #FBF8F1;*/
+}
+.email{
+	width: 100%;
+	height: 220px;
+	box-sizing: border-box;
+	padding-top: 10px;
+	position: absolute;
+	z-index: 3;
+	padding-top: 50px;
+}
+.nenphu{
+	position: absolute;
+	width: 100%;
+	height: 220px;
+	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
+	opacity: 0.6;
+	z-index: 2;
+}
+input[type=text]{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid red;
+	border-radius: 5px;
+	resize: vertical;
+}
+input[type=submit]{
+	width: 100%;
+	padding: 12px;
+	border-radius: 5px;
+	resize: vertical;
+}
+.col-25{
+	float: left;
+	font-size: 2vw;
+	color: #FBF8F1;
+	margin-left: 45px;
+	margin-top: 30px;
+}
+.col-75{
+	float: right;
+	margin-top: 25px;
+	width: 40%;
+}
+.col-85{
+	width: 80px;
+	float: right;
+	margin-top: 25px;
+	margin-left: 5px;
+}
+.row:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+@media screen and (max-width: 600px){
+	.col-25, .col-75, input[type=submit]{
+		width: 100%;
+	}
+}
+.fo_end{
+	float: left;
+	width: 100%;
+	height: 220px;
+	padding-top: 30px;
+	background: #8D7C62;
+	margin-top: 220px;
+}
+.btn-location{
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background: linear-gradient(to left, #EF4546 , #EADECE);
+	border: 0px;
+	margin-bottom: 15px;
+}
+.btn-phone{
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background: linear-gradient(to right, #EF4546 , #EADECE);
+	border: 0px;
+	margin-bottom: 15px;
+}
+.btn-emali{
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background: linear-gradient(to left, #EF4546 , #EADECE);
+	border: 0px;
+}
+.location_text{
+	color: #FBF8F1;
+	width: 280px;
+	float: right;
+	font-size: 17px;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+.phone_text{
+	float: right;
+	width: 280px;
+	font-size: 19px;
+	color: #FBF8F1;
+	font-family: 'Raleway', Arial, sans-serif;
+	font-weight: bold;
+	padding-top: 6px;
+}
+.emali_text{
+	float: right;
+	width: 280px;
+	font-size: 18px;
+	font-family: 'Raleway', Arial, sans-serif;
+	font-weight: bold;
+	padding-top: 6px;
+}
+.emali_text a{
+	text-decoration: none;
+	color: #FBF8F1;
+}
+.emali_text a:hover{
+	color: blue;
+}
+.text-l{
+	width: 290px;
+	height: 40px;
+	font-size: 24px;
+	font-family: 'Raleway', Arial, sans-serif;
+	margin-top: -4px;
+	color: #FBF8F1;
+}
+.text-left{
+	width: 440px;
+	text-indent: 40px;
+	color: #503123;
+	margin-top: 5px;
+	color: #FBF8F1;
+}
+.vienduoi{
+	position: absolute;
+	width: 80px;
+	height: 2px;
+	background: #FBF8F1;
+	margin-top: -10px;
+}
+.vienduoi1{
+	position: absolute;
+	width: 130px;
+	height: 2px;
+	background: #FBF8F1;
+	margin-top: -10px;
+}
+.btn-facebook{
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background: linear-gradient(to left, #9F3BFF , #F94D4D);
+	border: 0px;
+	margin-bottom: 10px;
+}
+.btn-instagram{
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background: linear-gradient(to left, #9F3BFF , #F94D4D);
+	border: 0px;
+	margin-bottom: 10px;
+}
+.btn-twitter{
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background: linear-gradient(to left, #9F3BFF , #F94D4D);
+	border: 0px;
+	margin-bottom: 10px;
+}
+.fb_text{
+	float: right;
+	width: 210px;
+	margin-top: 5px;
+}
+.ig_text{
+	float: right;
+	width: 210px;
+	margin-top: 5px;
+}
+.tw_text{
+	float: right;
+	width: 210px;
+	margin-top: 5px;
+}
+.facebook a{
+	color: #FBF8F1;
+}
+.facebook a:hover{
+	color: #564EFF;
+}
+.instagram a{
+	color: #FBF8F1;;
+}
+.instagram a:hover{
+	color: #564EFF;
+}
+.twitter a{
+	color: #FBF8F1;
+}
+.twitter a:hover{
+	color: #564EFF;
+}
+.page-f{
+	float: left;
+	width: 100%;
+	height: 30px;
+	background: #503123;
+	padding-top: 6px;
+	color: #FBF8F1;
+}
+.page-f a{
+	color: #FBF8F1;
+}
+.page-f a:hover{
+	color: #288AD6;
+}

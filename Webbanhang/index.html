@@ -2,272 +2,1143 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="2.css">
+	<title>Thời trang chính hãng giá rẻ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">  
-	<script type="text/javascript" src="vendor/bootstrap.js"></script>
-	<link rel="stylesheet" href="vendor/bootstrap.css">
-	<link rel="stylesheet" href="vendor/font-awesome.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="jquery.min.js"></script>
-	<script src="bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.css">
-	<style type="text/css">
-		html, body{
-			margin: 0;
-			padding: 0;
-		}
-		.nav-header{
-			width: 100%;
-			height: 30px;
-			background: #222222;
-			opacity: 0.9;
-			position: relative;
-		}
-		#cart_ht{
-			width: 200px;
-			height: 100px;
-			background: #4C4C4C;
-			opacity: 0.9;
-			margin-left: -170px;
-			margin-top: 4px;
-			border-radius: 6px;
-			border: 0px;
-			position: absolute;
-			overflow-x: auto;
-			display: none;
-			z-index: 2;
-		}
-		.cart:hover #cart_ht{
-			display: block;
-			animation: a 0.6s forwards;
-			transition: 0.6s;
-			z-index: auto;
-		}
-		@keyframes a{
-			0%{
-				transform: scale(0.8);
-				}
-			100%{
-				transform: scale(1);
-				}
-		}
-		#cart_ht span{
-			float: right;
-			color: white;
-			font-size: 13px;
-			padding-right: 12px;
-			padding-top: 4px;
-		}
-		.tt{
-			margin-top: 25px;
-			margin-left: 55px;
-			font-size: 14px;
-		}
-		.cart{
-			float: right;
-			margin-right: 35px;
-		}
-		.cart1{
-			color: white;
-			font-size: 13px;
-			line-height: 27px;
-		}
-		.hp{
-			float: right;
-			margin-left: 20px;
-			margin-right: 18px;
-		}
-		#help{
-			color: white;
-			font-size: 13px;
-			line-height: 27px;
-		}
-		#help:hover{
-			text-decoration: none;
-		}
-		.user{
-			float: right;
-		}
-		.us{
-			color: white;
-			font-size: 13px;
-			line-height: 29px;
-		}
-		.slide_menu{
-			float: left;
-			width: 100%;
-			z-index: -1;
-		}
-		.img{
-			width: 1400px;
-		}
-		.menu{
-			float: left;
-			width: 100%;
-			position: absolute;
-			z-index: 1;
-		}
-		.na{
-			border-radius: 0px;
-			opacity: 0.85;
-			z-index: 1;
-		}
-		#i_logo{
-			width: 90px;
-			margin-top: -20px;
-		}
-		.hm{
-			overflow-x: auto;
-			margin-left: 684px;
-		}
-		.im{
-			position: absolute;
-		}
-		.sp{
-			width: 180px;
-			opacity: 0.85;
-			background: #222222;
-			position: absolute;
-			float: left;
-			overflow-x: auto;
-			overflow-y: auto;
-			margin-left: 1040px;
-			margin-top: -20px;
-			opacity: 0;
-		}
-		.sp a{
-			text-decoration: none;
-			color: #9C9A97;
-		}
-		.sp li{
-			background: #222222;
-			border: 0px;
-		}
-		.sp li:hover{
-			background: white;
-			color: #222222;
-		}
-		.sp_hien{
-			opacity: 0.85;
-			animation: a2 0.6s forwards;
-			transition: 0.6s;
-		}
-		@keyframes a2{
-			0%{
-				transform: scale(0.8);
-				}
-			100%{
-				transform: scale(1);
-				}
-		}
-		.sp_ra{
-			opacity: 0;
-			animation: a3 0.6s forwards;
-			transition: 0.6s;
-		}
-		@keyframes a3{
-			0%{
-				transform: scale(1);
-				}
-			100%{
-				transform: scale(0.85);
-				}
-		}
-	</style>
+	<link rel="shortcut icon" href="img/logo.ico">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/fooster.css">
+	<link rel="stylesheet" type="text/css" href="css/wrapper.css">
 </head>
 <body>
 <div class="main">
-	<div class="nav-header">
-		<div class="cart">
-			<a href="#">
-				<i class="fas fa-cart-plus cart1"></i>
-			</a>
-			<div id="cart_ht">
-				<span>Tổng hàng: 0đ</span>
-				<br>
-				<button class="btn btn-primary tt"> Thanh toán</button>
-			</div>
+	<!-- slogan -->
+	<div class="head">
+		<div class="container">
+			<ul class="list-group list">
+				<li class="list list-group-item">CHẤT LƯỢNG HÀNG ĐẦU, GIÁ CẢ HỢP LÝ</li>
+				<li class="list list-group-item">-</li>
+				<li class="list list-group-item">LUÔN CẬP NHẬT NHỮNG STYLE MỚI NHẤT</li>
+				<li class="list list-group-item">-</li>
+				<li class="list list-group-item">GIAO HÀNG MIỄN PHÍ</li>
+			</ul>
 		</div>
-		<div class="hp">
-			<a href="#" id="help">
-				<i class="fas fa-question-circle"> Help</i>
-			</a>
-		</div>
-		<div class="user">
-			<a href="#">
-				<i class="far fa-user us"> Log In to Shop Member Profile</i>
-			</a>
-		</div>		
 	</div>
-	<div class="slide_menu">
-  			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    				<ol class="carousel-indicators">
-      				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      				<li data-target="#myCarousel" data-slide-to="1"></li>
-      				<li data-target="#myCarousel" data-slide-to="2"></li>
-    				</ol>
-
-    		<div class="carousel-inner">
-
-      			<div class="item active">
-        			<img src="img/img1 (1).jpg" alt="img1" >
-        			<div class="carousel-caption">
-        			</div>
-      			</div>
-
-      			<div class="item">
-        			<img src="img/img1 (1).png" alt="img2" >
-        			<div class="carousel-caption">
-        			</div>
-      			</div>
-    
-      			<div class="item">
-        			<img src="img/img1 (2).jpg" alt="img3" >
-        			<div class="carousel-caption">
-        			</div>
-      			</div>
-  
-    		</div>
-
-    			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      				<span class="glyphicon glyphicon-chevron-left"></span>
-      				<span class="sr-only">Previous</span>
-    			</a>
-    			<a class="right carousel-control" href="#myCarousel" data-slide="next">
-      				<span class="glyphicon glyphicon-chevron-right"></span>
-      				<span class="sr-only">Next</span>
-    			</a>
-  			</div>
-		</div>
-		<div class="menu">
-			<nav class="navbar navbar-inverse na">
-				<div class="container">
-  					<div class="container-fluid">
-    					<div class="navbar-header">
-      						<a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" id="i_logo"></a>
-    					</div>
-    					<ul class="nav navbar-nav hm">
-      						<li><a href="#">Home</a></li>
-      						<li><a href="#" id="click_sp">Sản phẩm</a></li>
-      						<li><a href="#">Tin tức</a></li>
-      						<li><a href="#">Liên hệ</a></li>
-    					</ul>
-  					</div>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<div class="container">
+			<nav class="navbar navbar-inverse nv">
+  				<div class="container-fluid">
+    				<div class="navbar-header">
+      					<a class="navbar-brand" href="index.html">
+      						<img src="img/logo.png" style="width: 55px"> 
+      					</a>
+      					<div id="shopname">
+      						<span>K'Store</span>
+      					</div>
+    				</div>
+    				<form class="form-inline navbar-nav">
+      							<input class="form-control " type="text" placeholder="Tìm kiếm trên K'Store...">
+    							<button class="btn byn" type="submit">Tìm kiếm</button>
+  							</form>
+    				<ul class="nav navbar-nav">
+      					<li class="cart_bt">
+      						<a href="cart.html">
+      							<i class="fas fa-cart-plus ch"></i> <span id="gh"> Giỏ hàng </span>
+      						</a>
+      						<ul class="list-group danhsachgh">
+      							<li class="list list-group-item">
+									<div id="ttgiohang">
+										<div id="ttgiohang_sp1">
+											<div id="anh">
+												<img src="img/tt.jpg" style="width: 60px;">
+											</div>
+											<div id="tt">
+												<span>Quần jean nam màu xanh</span><br>
+												<b>230.000đ</b><br>
+												<button class="btn btn-toolbar">-</button>
+												<button class="btn btn-toolbar">1</button>
+												<button class="btn btn-toolbar">+</button>
+											</div>
+										</div>
+									</div>
+      							</li>
+      							<li class="list list-group-item">
+      								<div id="totalmoney">
+      									<div id="txt1">
+      										<span>Tổng tiền: </span>
+      									</div>
+      									<div id="txt2">
+      										<b>230.0000đ</b>
+      									</div>
+      								</div>
+      							</li>
+								<li class="list list-group-item bt">
+									<a href="pay.html">
+										<button type="submit" class="btn btn-success">Thanh toán</button>
+									</a>
+								</li>
+      						</ul>
+      					</li>
+      					<li>
+      						<a href="account.html">
+      							<i class="fas fa-user ch"></i><span id="tk"> Tài khoản</span>
+      						</a>
+      					</li>
+    				</ul>
   				</div>
 			</nav>
-			<div class="sp">
-				<a href="#"><li class="list-group-item">Áo khoác & Áo vest</li></a>
-				<a href="#"><li class="list-group-item">Áo ngắn tay không cổ</li></a>
-				<a href="#"><li class="list-group-item">Áo nhỉ/Áo len</li></a>
-				<a href="#"><li class="list-group-item">Quần short</li></a>
-				<a href="#"><li class="list-group-item">Quần tây</li></a>
-				<a href="#"><li class="list-group-item">Quần thể thao</li></a>
-				<a href="#"><li class="list-group-item">Quần Jean</li></a>
-				<a href="#"><li class="list-group-item">Khác</li></a>
+		</div>
+	</div>
+<!-- menu & slider -->
+	<div class="menu_slide">
+		<div class="container">
+			<!-- menu -->
+			<div class="menu">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a href="sanphammoi.html">
+							<span>Sản phẩm mới</span>
+						</a>
+					</li>
+					<li class="list-group-item men-all">
+						<span>Thời trang nam</span>
+						<div class="men">
+							<ul class="list-group">
+								<li class="list-group-item men_somi">
+									<span>Áo sơ mi nam</span>
+									<div class="men_aos">
+										<ul class="list-group">
+											<li class="list-group-item">
+												<a href="somitaydai.html">
+													<span>Áo sơ mi tay dài</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="somitayngan.html">
+													<span>Áo sơ mi tay ngắn</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="somihoatiet.html">
+													<span>Áo sơ mi họa tiết</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="somicotru.html">
+													<span>Áo sơ mi cổ trụ</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list-group-item men_thun">
+									<span>Áo thun</span>
+									<div class="men_aot">
+										<ul class="list-group">
+											<li class="list-group-item">
+												<a href="thuncoco.html">
+													<span>Áo thun có cổ</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="thuncotron.html">
+													<span>Áo thun cổ tròn</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="thuncotim.html">
+													<span>Áo thun cổ trái tim</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="thuncohaley.html">
+													<span>Áo thun cổ haley</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list-group-item men_quan">
+									<span>Quần nam</span>
+									<div class="men_q">
+										<ul class="list-group">
+											<li class="list-group-item">
+												<a href="quanau.html">
+													<span>Quần tây</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="quanjean.html">
+													<span>Quần jean</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="quankaki.html">
+													<span>Quần kaki</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="quanni.html">
+													<span>Quần nỉ</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="list-group-item female_all">
+						<span>Thời trang nữ</span>
+						<div class="female">
+							<ul class="list-group">
+								<li class="list-group-item female_somi">
+									<span>Áo sơ mi nữ</span>
+									<div class="female_aos">
+										<ul class="list-group">
+											<li class="list-group-item">
+												<a href="somitron.html">
+													<span>Áo sơ mi trơn</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="sominuhoatiet.html">
+													<span>Áo sơ mi họa tiết</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list-group-item female_thun">
+									<span>Áo thun nữ</span>
+									<div class="female_aot">
+										<ul class="list-group">
+											<li class="list-group-item">
+												<a href="shirtfemale1.html">
+													<span>Áo thun có cổ</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="shirtfemale2.html">
+													<span>Áo thun cổ tròn</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="shirtfemale3.html">
+													<span>Áo thun cổ trái tim</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="shirtfemale1.html">
+													<span>Áo thun Crop Top</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list-group-item female_quan">
+									<span>Quần nữ</span>
+									<div class="female_q">
+										<ul class="list-group">
+											<li class="list-group-item">
+												<a href="trosserfm1.html">
+													<span>Quần vải nữ</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="trosserfm2.html">
+													<span>Quần jean nữ</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="trosserfm3.html">
+													<span>Quần kaki nữ</span>
+												</a>
+											</li>
+											<li class="list-group-item">
+												<a href="trosserfm4.html">
+													<span>Chân váy</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list-group-item">
+									<a href="dress.html">
+										<span>Váy</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="list-group-item fashion_winter">
+						<span>Thời trang đông</span>
+						<div class="f_w">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<a href="aokhoac.html">
+										<span>Áo khoác</span>
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="aolen.html">
+										<span>Áo len</span>
+									</a>
+								</li>
+							</ul>
+						</div>	
+					</li>
+					<li class="list-group-item phukiennam_all">
+						<span>Phụ kiện nam</span>
+						<div class="phukiennam">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<a href="phukien1.html">
+										<span>Dây lưng nam</span>
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="phukien2.html">
+										<span>Ví da nam</span>
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="phukien3.html">
+										<span>Balo - túi xách</span>
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="phukien4.html">
+										<span>Giày tây nam</span>
+									</a>
+								</li>
+							</ul>
+						</div>	
+					</li>
+					<li class="list-group-item phukiennu_all">
+						<span>Phụ kiện nữ</span>
+						<div class="phukiennu">
+							<ul class="list-group">
+								<li class="list-group-item">
+									<a href="phukiennu1.html">
+										<span>Tất nữ</span>
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="phukiennu2.html">
+										<span>Dây lưng</span>
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="phukiennu3.html">
+										<span>Mũ len</span>
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="phukiennu4.html">
+										<span>Khăn tay-khăn quàng</span>
+									</a>
+								</li>
+								<li class="list-group-item">
+									<a href="phukiennu5.html">
+										<span>Găng tay nữ</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="list-group-item">
+						<a href="sale.html">
+							<span>Sale</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- slide -->
+			<div class="slide">
+				<div id="mySlide" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#mySlide" data-slide-to="0" class="active"></li>
+						<li data-target="#mySlide" data-slide-to="1"></li>
+						<li data-target="#mySlide" data-slide-to="2"></li>
+						<li data-target="#mySlide" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="img/a1.jpg" alt="anh1">
+						</div>
+						<div class="item">
+							<img src="img/a2.jpg" alt="anh2">
+						</div>
+						<div class="item">
+							<img src="img/a3.jpg" alt="anh3">
+						</div>
+						<div class="item">
+							<img src="img/a4.jpg" alt="anh4">
+						</div>
+					</div>
+					<a class="left carousel-control" href="#mySlide" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+      					<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#mySlide" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+      					<span class="sr-only">Next</span>
+					</a>
+				</div>
 			</div>
 		</div>
+	</div>
+	<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<img src="img/banner.png">
+		</div>
+	</div>
+	<!-- hot deal -->
+	<div class="deal">
+		<div class="container">
+			<div class="logo_deal">
+				<img src="img/deal.png" alt="deal">
+			</div>
+			<div class="deal_page1">
+				<div class="page1_sp">
+					<div class="sp_img">
+						<img src="img/1.jpg">
+					</div>
+					<div class="sp_tt">
+						<span>Sơ mi kẻ caro regular</span><br>
+						<span style="text-decoration: line-through;">500.000đ</span> <b>390.000đ</b>
+					</div>
+					<div class="muahang">
+    					<a href="#" class="btn-floating">
+    						<button type="button" class="btn button_muahang">
+              					<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            				</button>
+    					</a>
+					</div>
+				</div>
+				<div class="page1_sp">
+					<div class="sp_img">
+						<img src="img/2 (1).jpg">
+					</div>
+					<div class="sp_tt">
+						<span>Áo sát nách nam</span><br>
+						<span style="text-decoration: line-through;">300.000đ</span> <b>249.000đ</b>
+					</div>
+					<div class="muahang">
+    					<a href="#" class="btn-floating">
+    						<button type="button" class="btn button_muahang">
+              					<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            				</button>
+    					</a>
+					</div>
+				</div>
+				<div class="page1_sp">
+					<div class="sp_img">
+						<img src="img/2 (1).jpeg">
+					</div>
+					<div class="sp_tt">
+						<span>Áo phông cổ tròn cơ bản</span><br>
+						<span style="text-decoration: line-through;">320.000đ</span> <b>249.000đ</b>
+					</div>
+					<div class="muahang">
+    					<a href="#" class="btn-floating">
+    						<button type="button" class="btn button_muahang">
+              					<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            				</button>
+    					</a>
+					</div>
+				</div>
+				<div class="page1_sp">
+					<div class="sp_img">
+						<img src="img/2 (2).jpeg">
+					</div>
+					<div class="sp_tt">
+						<span>Áo phông nam họa tiết kẻ</span><br>
+						<span style="text-decoration: line-through;">449.000đ</span> <b>349.000đ</b>
+					</div>
+					<div class="muahang">
+    					<a href="#" class="btn-floating">
+    						<button type="button" class="btn button_muahang">
+              					<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            				</button>
+    					</a>
+					</div>
+				</div>
+				<div class="xemtatca">
+					<a href="sale.html" class="btn btn-light">Xem tất cả</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- sản phẩm nổi bật thời trang nam -->
+	<div class="tt_men">
+		<div class="container cv">
+			<div class="tt_header">
+				<div class="tt_tittle">
+					<div class="tittle">
+						<span>THỜI TRANG NAM</span>
+					</div>
+					<div class="tg"></div>
+				</div>
+				<div class="danhmuc">
+					<ul class="list-group">
+						<li class="list-group-item beg">
+							<span>Áo sơ mi</span>
+						</li>
+						<li class="list-group-item beg">
+							<span>Áo thun</span>
+						</li>
+						<li class="list-group-item beg">
+							<span>Quần</span>
+						</li>
+						<li class="list-group-item end">
+							<a href="thoitrangnam.html">
+								<span>Xem tất cả</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="men_center">
+				<div class="men_sp">
+					<div class="card s1">
+  						<img class="card-img-top" src="img/ttn (1).jpg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Áo phông nam cổ tròn</h4>
+    						<b class="card-text" style="color: red">249.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/ttn (1).jpeg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Áo phông nam cổ tròn in hình</h4>
+    						<b class="card-text" style="color: red">249.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/ttn (2).jpeg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Áo phông nam in hìnhn</h4>
+    						<b class="card-text" style="color: red">249.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/ttn (3).jpeg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Áo phông nam cổ tròn cơ bản</h4>
+    						<b class="card-text" style="color: red">249.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s3">
+  						<img class="card-img-top" src="img/ttn (4).jpeg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Áo phông nam cổ tròn</h4>
+    						<b class="card-text" style="color: red">199.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- sản phẩm nổi bật thời trang nữ -->
+	<div class="tt_famale">
+		<div class="container">
+			<div class="tt_header">
+				<div class="tt_tittle">
+					<div class="tittle">
+						<span>THỜI TRANG NỮ</span>
+					</div>
+					<div class="tg"></div>
+				</div>
+				<div class="danhmuc">
+					<ul class="list-group">
+						<li class="list-group-item beg">
+							<span>Áo sơ mi</span>
+						</li>
+						<li class="list-group-item beg">
+							<span>Áo thun</span>
+						</li>
+						<li class="list-group-item beg">
+							<span>Quần</span>
+						</li>
+						<li class="list-group-item beg">
+							<a href="dress.html">
+								<span>Váy</span>
+							</a>
+						</li>
+						<li class="list-group-item end">
+							<a href="thoitrangnu.html">
+								<span>Xem tất cả</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="men_center">
+				<div class="men_sp">
+					<div class="card s1">
+  						<img class="card-img-top" src="img/tb (1).jpg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Áo phông nữ</h4>
+    						<b class="card-text" style="color: red">299.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/tb (1).jpeg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Áo phông nữ</h4>
+    						<b class="card-text" style="color: red">249.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/tb (2).jpeg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Áo phông nữ kẻ ngang</h4>
+    						<b class="card-text" style="color: red">249.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/tb (2).jpg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Chân váy nữ đính cúc</h4>
+    						<b class="card-text" style="color: red">449.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s3">
+  						<img class="card-img-top" src="img/tb (3).jpg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Chân váy nữ</h4>
+    						<b class="card-text" style="color: red">349.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Thời trang mùa đông -->
+	<div class="tt_md">
+		<div class="container">
+			<div class="tt_header">
+				<div class="tt_tittle">
+					<div class="tittle">
+						<span>THỜI TRANG ĐÔNG</span>
+					</div>
+					<div class="tg"></div>
+				</div>
+				<div class="danhmuc">
+					<ul class="list-group">
+						<li class="list-group-item beg">
+							<a href="aokhoac.html">
+								<span>Áo khoác</span>
+							</a>
+						</li>
+						<li class="list-group-item beg">
+							<a href="aolen.html">
+								<span>Áo len</span>
+							</a>
+						</li>
+						<li class="list-group-item end">
+							<a href="thoitrangdong.html">
+								<span>Xem tất cả</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="men_center">
+				<div class="men_sp">
+					<div class="card s1">
+  						<img class="card-img-top" src="img/md (1).png" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Áo len lông cừu Úc xanh đen</h4>
+    						<b class="card-text" style="color: red">799.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/md (2).png" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Áo khoác nam</h4>
+    						<b class="card-text" style="color: red">699.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/md (3).png" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Áo khoác dạ</h4>
+    						<b class="card-text" style="color: red">299.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/md (4).png" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Áo khoác nỉ</h4>
+    						<b class="card-text" style="color: red">699.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s3">
+  						<img class="card-img-top" src="img/md (5).png" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Áo len lông cừu Ú vàng nhạt</h4>
+    						<b class="card-text" style="color: red">799.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- phụ kiện nam -->
+	<div class="tt_pknam">
+		<div class="container">
+			<div class="tt_header">
+				<div class="tt_tittle">
+					<div class="tittle">
+						<span>PHỤ KIỆN NAM</span>
+					</div>
+					<div class="tg"></div>
+				</div>
+				<div class="danhmuc">
+					<ul class="list-group">
+						<li class="list-group-item beg">
+							<a href="phukien1.html">
+								<span>Dây lưng</span>
+							</a>
+						</li>
+						<li class="list-group-item beg">
+							<a href="phukien2.html">
+								<span>Ví da</span>
+							</a>
+						</li>
+						<li class="list-group-item beg">
+							<a href="phukien3.html">
+								<span>Balo - túi xách</span>
+							</a>
+						</li>
+						<li class="list-group-item beg">
+							<a href="phukien4.html">
+								<span>Giầy tây nam</span>
+							</a>
+						</li>
+						<li class="list-group-item end">
+							<a href="phukiennam.html">
+								<span>Xem tất cả</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="men_center">
+				<div class="men_sp">
+					<div class="card s1">
+  						<img class="card-img-top" src="img/pk (1).jpg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Ví đen BV224</h4>
+    						<b class="card-text" style="color: red">220.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/pk (1).png" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Thắt lưng nam đen TL443</h4>
+    						<b class="card-text" style="color: red">196.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/pk (2).jpg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Túi xách đen TX132</h4>
+    						<b class="card-text" style="color: red">322.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/pk (2).png" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Thắt lưng nam đen TL432</h4>
+    						<b class="card-text" style="color: red">169.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s3">
+  						<img class="card-img-top" src="img/pk (3).jpg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Túi xách nâu TX232</h4>
+    						<b class="card-text" style="color: red">412.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ----------- -->
+	<!-- phụ kiện nữ -->
+	<div class="tt_pknu">
+		<div class="container">
+			<div class="tt_header">
+				<div class="tt_tittle">
+					<div class="tittle">
+						<span>PHỤ KIỆN NỮ</span>
+					</div>
+					<div class="tg"></div>
+				</div>
+				<div class="danhmuc">
+					<ul class="list-group">
+						<li class="list-group-item beg">
+							<a href="phukiennu1.html">
+								<span>Tất</span>
+							</a>
+						</li>
+						<li class="list-group-item beg">
+							<a href="phukiennu2.html">
+								<span>Dây lưng</span>
+							</a>
+						</li>
+						<li class="list-group-item beg">
+							<a href="phukiennu3.html">
+								<span>Mũ len</span>
+							</a>
+						</li>
+						<li class="list-group-item beg">
+							<a href="phukiennu4.html">
+								<span>Khăn tay - khăn quàng</span>
+							</a>
+						</li>
+						<li class="list-group-item beg">
+							<a href="phukiennu5.html">
+								<span>Găng tay</span>
+							</a>
+						</li>
+						<li class="list-group-item end">
+							<a href="phukiennu.html">
+								<span>Xem tất cả</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="men_center">
+				<div class="men_sp">
+					<div class="card s1">
+  						<img class="card-img-top" src="img/pknu (1).jpg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Khăn len nữ màu cam</h4>
+    						<b class="card-text" style="color: red">145.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/pknu (1).jpeg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Khăn len nữ màu nâu bò</h4>
+    						<b class="card-text" style="color: red">145.500đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/pknu (2).jpg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Combo tất nữ</h4>
+    						<b class="card-text" style="color: red">149.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s1">
+  						<img class="card-img-top" src="img/pknu (3).jpg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Khăn len nữ</h4>
+    						<b class="card-text" style="color: red">149.500đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+					<div class="card s3">
+  						<img class="card-img-top" src="img/pknu (4).jpg" alt="Card image cap">
+  						<div class="card-body s2">
+    						<h4 class="card-title ct">Thắt lưng nữ</h4>
+    						<b class="card-text" style="color: red">49.000đ</b>
+    						<div class="icon_cart">
+    							<a href="#" class="btn-floating">
+    								<button type="button" class="btn btn-danger button_muahang">
+              							<i class="fas fa-cart-plus"> Thêm vào giỏ</i>
+            						</button>
+    							</a>
+    						</div>
+  						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- fooster -->
+	<div class="fooster" style="background-image: url('img/nen.jpg');">
+		<div class="nenphu"></div>
+		<div class="email">
+			<div class="container">
+				<form method="GET">
+					<div class="row">
+						<div class="col-25">
+							<label for="fsearch">ĐĂNG KÍ NHẬN BẢN TIN</label>
+						</div>
+						<div class="col-85">
+							<input type="submit" class="btn btn-danger btn-success" value="Đăng kí"></input>
+						</div>
+						<div class="col-75">
+							<input type="text" placeholder="Nhập email của bạn tại đây..." id="fsearch">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="fo_end">
+			<div class="container">
+				<div class="col-sm-4" >
+					<div class="location">
+						<button type="button" class="btn-location">
+							<i class="fas fa-location-arrow"></i>
+						</button>
+						<div class="location_text">
+							<span>Số 6, ngõ 155 Nguyễn Văn Trỗi, Hà Đông, Hà Nội</span>
+						</div>
+					</div>
+					<div class="phone">
+						<button type="button" class="btn-phone">
+							<i class="fas fa-phone"></i>
+						</button>
+						<div class="phone_text">
+							<span>01231397243</span>
+						</div>
+					</div>
+					<div class="emali">
+						<button type="button" class="btn-emali">
+							<i class="fas fa-envelope"></i>
+						</button>
+						<div class="emali_text">
+							<a href="#">
+								<span>khoidanghoang144@gmail.com</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<div class="text-l">
+						<span>Về cửa hàng</span>
+					</div>
+					<div class="vienduoi"></div>
+					<div class="text-left">
+						<p>Được thành lập vào năm 2012, cửa hàng đã phục vụ cho hơn 10 triệu khách hàng. Cửa hàng luôn cập nhật những mẫu thời trang mới nhất đem đến tay của khách hàng đồng thời đảm bảo mức giá tốt nhất có thể. Luôn đảm bảo quyền lợi của khách hàng lên hàng đầu, sẵn sàng đổi trả, hoàn tiền nếu không vừa ý khách hàng.</p>
+					</div>
+				</div>
+				<div class="col-sm-3 fv">
+					<div class="text-l">
+						<span>Kết nối với chúng tôi</span>
+					</div>
+					<div class="vienduoi1"></div>
+					<div class="facebook">
+						<a href="https://www.facebook.com" target="_blank">
+							<button type="button" class="btn-facebook">
+								<i class="fab fa-facebook"></i>
+							</button>
+							<div class="fb_text">
+								<span>Facebook</span>
+							</div>
+						</a>
+					</div>
+					<div class="instagram">
+						<a href="https://www.instagram.com" target="_blank">
+							<button type="button" class="btn-instagram">
+								<i class="fab fa-instagram"></i>
+							</button>
+							<div class="ig_text">
+								<span>Instagram</span>
+							</div>
+						</a>
+					</div>
+					<div class="twitter">
+						<a href="https://www.twitter.com" target="_blank">
+							<button type="button" class="btn-twitter">
+								<i class="fab fa-twitter"></i>
+							</button>
+							<div class="tw_text">
+								<span>Twitter</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-f">
+  			<div class="footer-copyright text-center py-3">© 2020 Copyright:
+    			<a href="https://github.com/khoi140499" target="_blank"> Fllow me on GitHub</a>
+  			</div>
+		</div>
+	</div>
 </div>
-<script type="text/javascript" src="1.js"></script>
+<script type="text/javascript" src="js/1.js"></script>
 </body>
 </html>
