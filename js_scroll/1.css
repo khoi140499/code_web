@@ -1,0 +1,47 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+.main{
+	width: 100%;
+	height: 4000px;
+	background: #FBF8F1;
+}
+.main1{
+	float: left;
+	width: 100%;
+	height: 300px;
+	background: red;
+	transition: 0.4s;
+}
+.main3{
+	float: left;
+	width: 100%;
+	height: 300px;
+	background: #B67153;
+	margin-top: 50px;
+	transition: 0.4s;
+}
+.main2{
+	float: left;
+	width: 100%;
+	height: 300px;
+	background: red;
+	margin-top: 50px;
+	transition: 0.4s;
+	opacity: 0;
+}
+.dilen{
+	opacity: 1;
+	animation: a1 1s forwards;
+}
+@keyframes a1{
+	from{
+		transform: translateY(200px);
+		opacity: 0;
+	}
+	to{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}

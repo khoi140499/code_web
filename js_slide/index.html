@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+	<link rel="stylesheet" href="vendor/font-awesome.css">
+	<style type="text/css">
+		.slidebao{
+			position: relative;
+			width: 500px;
+			height: 333px;
+		}
+		.cacslide{
+			position: absolute;
+		}
+		.cacslide ul{
+			position: relative;
+		}
+		.cacslide ul li{
+			list-style: none;
+			position: absolute;
+			opacity: 0;
+		}
+		.cacslide ul li.acti{
+			opacity: 1;
+		}
+		.chuyenslide{
+			position: absolute;
+		}
+		.chuyenslide ul li{
+			display: inline-block;
+			border: 1px solid red;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			text-indent: -1000px;
+			cursor: pointer;
+			transition: 0.4s;
+		}
+		.chuyenslide{
+			position: absolute;
+			transform: translateX(-50%);
+			left: 50%;
+			top: 90%;
+			opacity: 0.8;
+		}
+		.chuyenslide ul li.kichhoat{
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="slidebao">
+		<div class="cacslide">
+			<ul>
+				<li class="acti">
+					<div class="motslide">
+						<img src="a.jpeg">
+					</div>
+				</li>
+				<li>
+					<div class="motslide">
+						<img src="s.jpeg">
+					</div>
+				</li>
+				<li>
+					<div class="motslide">
+						<img src="d.jpeg">
+					</div>
+				</li>
+			</ul>	
+		</div>
+		<div class="chuyenslide">
+			<ul>
+				<li class="kichhoat">1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="1.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+//Tên đối tượng.offsetTop => vị trí của phần tử trong trang web
+
+//viết slide
+
+previousElementSibling  -> tra ve ptu o trc no
+nextElementSibling  -> tra ve ptu o sau
+
+//auto time slide => setInterval(1000, function())
+//xoa chế độ tự gọi hàm sau mỗi thời gian của hàm setInterval => clearInterval

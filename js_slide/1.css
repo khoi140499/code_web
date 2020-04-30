@@ -1,0 +1,38 @@
+/*.slidebao{
+	position: relative;
+}
+.cacslide{
+	position: absolute;
+}
+.cacslide ul{
+	position: relative;
+}
+.chuyenslide ul{
+	display: inline;
+}
+.chuyenslide{
+	position: absolute;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+.chuyenslide ul li:hover{
+	background: gray;
+}
+.chuyenslide ul li.kichhoat{
+	background: gray;
+}
+.chuyenslide ul li{
+	display: inline-block;
+	border: 1px solid gray;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	text-indent: -1000px;
+	cursor: pointer;
+	transition: 0.4s;
+	opacity: 0;
+}
+.cacslide ul li{
+	list-style: none;
+	position: absolute;
+}*/

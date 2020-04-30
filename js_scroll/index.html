@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="1.css">
+</head>
+<body>
+	<div class="main">
+		<div class="main1">a</div>
+		<div class="main3">a</div>
+		<div class="main3">a</div>
+		<div class="main3">a</div>
+		<div class="main2">a</div>
+		<div class="main2">a</div>
+		<div class="main2">a</div>
+		<div class="main2">a</div>
+		<div class="main2">a</div>
+		<div class="main2">a</div>
+		<div class="main2">a</div>
+		<div class="main2">a</div>
+	</div>
+</body>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+	var x=document.querySelectorAll('.main2');
+	var tt="true";
+	document.addEventListener('scroll', function(){
+		 for (var i = 0; i < x.length; i++) {
+		 	var y = x[0].offsetTop-400+400*i;
+		 	console.log(x[i].offsetTop);
+		 	if(window.pageYOffset > y){
+		 		x[i].classList.add('dilen');
+		 	}
+		 }
+	})
+}, false)
+</script>
+</html>
